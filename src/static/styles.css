@@ -93,12 +93,16 @@ section h3 {
   border-left: 3px solid #0066cc;
   padding: 10px 15px;
   border-radius: 3px;
+  list-style: none;
 }
 
 .participants-list li {
   margin-bottom: 5px;
   color: #555;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .participants-list li:last-child {
@@ -108,6 +112,24 @@ section h3 {
 .participants-list em {
   color: #999;
   font-style: italic;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  font-size: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  line-height: 1;
+  min-width: auto;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
 }
 
 .form-group {
